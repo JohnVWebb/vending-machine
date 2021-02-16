@@ -9,8 +9,16 @@ class ValuesService {
   ProxyState.money++
   console.log(ProxyState.money)
   }
+  
+}
+
+class VendingItems {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
 }
 
 
 export const valuesService = new ValuesService();
-
+export const vendingItems = new VendingItems();
